@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0" xmlns:frss="https://freshrss.org/opml">
+  <head><title>Synthetic migration example</title></head>
+  <body>
+    <outline text="Science">
+      <outline text="Example feed" type="rss" xmlUrl="https://example.org/feed.xml" frss:priority="important"/>
+      <outline text="Research">
+        <outline text="Example scraper" type="HTML+XPath" xmlUrl="https://example.net/news" frss:xPathItem="//article"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

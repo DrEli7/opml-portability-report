@@ -1,0 +1,14 @@
+{
+  "name": "opml-portability-report",
+  "version": "0.1.0",
+  "description": "Offline OPML migration reports with FreshRSS extension and round-trip loss checks.",
+  "type": "module",
+  "license": "MIT",
+  "author": "DrEli7",
+  "engines": { "node": ">=22" },
+  "bin": { "opml-portability-report": "src/cli.mjs" },
+  "exports": "./src/index.mjs",
+  "files": ["src", "README.md", "LICENSE", "examples"],
+  "scripts": { "test": "node --test", "demo": "node src/cli.mjs examples/freshrss.opml --after examples/roundtrip.opml --fail-on never" },
+  "dependencies": { "fast-xml-parser": "5.11.2" }
+}
